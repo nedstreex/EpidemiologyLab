@@ -1,0 +1,504 @@
+<mxfile host="app.diagrams.net" agent="draw.io" pages="4">
+  <diagram id="page1" name="Таблицы узлов (Nodes)">
+    <mxGraphModel dx="1138" dy="1830" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="page_title1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=16;fontStyle=1;" value="Диаграмма 1: Таблицы узлов (NODE tables)" vertex="1">
+          <mxGeometry height="30" width="1120" x="60" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="p_title" parent="1" style="text;html=1;strokeColor=none;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=13;fontStyle=1;arcSize=10;" value="Person (Узел)" vertex="1">
+          <mxGeometry height="36" width="220" x="60" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p_row1" parent="1" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="PersonID : INT (PK, IDENTITY)" vertex="1">
+          <mxGeometry height="28" width="220" x="60" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="p_row2" parent="1" style="text;html=1;strokeColor=#6c8ebf;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="FullName : NVARCHAR(100) NOT NULL" vertex="1">
+          <mxGeometry height="28" width="220" x="60" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="p_row3" parent="1" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="Age : INT CHECK (0 &lt; Age &lt; 120)" vertex="1">
+          <mxGeometry height="28" width="220" x="60" y="152" as="geometry" />
+        </mxCell>
+        <mxCell id="p_row4" parent="1" style="text;html=1;strokeColor=#6c8ebf;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="City : NVARCHAR(50)" vertex="1">
+          <mxGeometry height="28" width="220" x="60" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="p_row5" parent="1" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="TestResult : NVARCHAR(20)" vertex="1">
+          <mxGeometry height="28" width="220" x="60" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="p_row6" parent="1" style="text;html=1;strokeColor=#6c8ebf;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;fontSize=10;fontColor=#666666;fontStyle=2;" value="  CHECK: Positive/Negative/Pending/Recovered" vertex="1">
+          <mxGeometry height="22" width="220" x="60" y="236" as="geometry" />
+        </mxCell>
+        <mxCell id="p_badge" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;fontSize=11;fontStyle=1;" value="AS NODE" vertex="1">
+          <mxGeometry height="28" width="220" x="60" y="266" as="geometry" />
+        </mxCell>
+        <mxCell id="p_data_lbl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;fontStyle=1;" value="Примеры данных (20 строк):" vertex="1">
+          <mxGeometry height="20" width="220" x="60" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="p_d1" parent="1" style="text;html=1;strokeColor=#6c8ebf;fillColor=#f8f9fa;align=left;spacingLeft=6;fontSize=10;" value="1 | Иванов Иван | 34 | Москва | Positive" vertex="1">
+          <mxGeometry height="22" width="220" x="60" y="326" as="geometry" />
+        </mxCell>
+        <mxCell id="p_d2" parent="1" style="text;html=1;strokeColor=#6c8ebf;fillColor=#ffffff;align=left;spacingLeft=6;fontSize=10;" value="2 | Петров Петр | 28 | Москва | Positive" vertex="1">
+          <mxGeometry height="22" width="220" x="60" y="348" as="geometry" />
+        </mxCell>
+        <mxCell id="p_d3" parent="1" style="text;html=1;strokeColor=#6c8ebf;fillColor=#f8f9fa;align=left;spacingLeft=6;fontSize=10;" value="3 | Сидорова Анна | 45 | Москва | Negative" vertex="1">
+          <mxGeometry height="22" width="220" x="60" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="p_d4" parent="1" style="text;html=1;strokeColor=#6c8ebf;fillColor=#ffffff;align=left;spacingLeft=6;fontSize=10;" value="4 | Кузнецов Дмитрий | 52 | СПб | Positive" vertex="1">
+          <mxGeometry height="22" width="220" x="60" y="392" as="geometry" />
+        </mxCell>
+        <mxCell id="p_d5" parent="1" style="text;html=1;strokeColor=#6c8ebf;fillColor=#f8f9fa;align=left;spacingLeft=6;fontSize=10;" value="5 | Смирнова Ольга | 31 | СПб | Recovered" vertex="1">
+          <mxGeometry height="22" width="220" x="60" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="p_d_etc" parent="1" style="text;html=1;strokeColor=#6c8ebf;fillColor=#ffffff;align=left;spacingLeft=6;fontSize=10;fontStyle=2;fontColor=#888888;" value="... (всего 20 строк, разные города)" vertex="1">
+          <mxGeometry height="22" width="220" x="60" y="436" as="geometry" />
+        </mxCell>
+        <mxCell id="pl_title" parent="1" style="text;html=1;strokeColor=none;fillColor=#d5e8d4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=13;fontStyle=1;arcSize=10;" value="Place (Узел)" vertex="1">
+          <mxGeometry height="36" width="220" x="360" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pl_row1" parent="1" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="PlaceID : INT (PK, IDENTITY)" vertex="1">
+          <mxGeometry height="28" width="220" x="360" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="pl_row2" parent="1" style="text;html=1;strokeColor=#82b366;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="PlaceName : NVARCHAR(100) NOT NULL" vertex="1">
+          <mxGeometry height="28" width="220" x="360" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="pl_row3" parent="1" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="Address : NVARCHAR(200)" vertex="1">
+          <mxGeometry height="28" width="220" x="360" y="152" as="geometry" />
+        </mxCell>
+        <mxCell id="pl_row4" parent="1" style="text;html=1;strokeColor=#82b366;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="PlaceType : NVARCHAR(50)" vertex="1">
+          <mxGeometry height="28" width="220" x="360" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="pl_row5" parent="1" style="text;html=1;strokeColor=#82b366;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;fontSize=10;fontColor=#666666;fontStyle=2;" value="  CHECK: Restaurant/Hospital/Office/Mall/School/Transport/Home" vertex="1">
+          <mxGeometry height="30" width="220" x="360" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="pl_row6" parent="1" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="RiskLevel : NVARCHAR(20)" vertex="1">
+          <mxGeometry height="28" width="220" x="360" y="238" as="geometry" />
+        </mxCell>
+        <mxCell id="pl_row7" parent="1" style="text;html=1;strokeColor=#82b366;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;fontSize=10;fontColor=#666666;fontStyle=2;" value="  CHECK: Low/Medium/High/Critical" vertex="1">
+          <mxGeometry height="22" width="220" x="360" y="266" as="geometry" />
+        </mxCell>
+        <mxCell id="pl_badge" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#00897B;strokeColor=#00695C;fontColor=#ffffff;fontSize=11;fontStyle=1;" value="AS NODE" vertex="1">
+          <mxGeometry height="28" width="220" x="360" y="296" as="geometry" />
+        </mxCell>
+        <mxCell id="pl_data_lbl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;fontStyle=1;" value="Примеры данных (15 строк):" vertex="1">
+          <mxGeometry height="20" width="220" x="360" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="pl_d1" parent="1" style="text;html=1;strokeColor=#82b366;fillColor=#f8f9fa;align=left;spacingLeft=6;fontSize=10;" value="1 | Ресторан ВкусВилл | Restaurant | High" vertex="1">
+          <mxGeometry height="22" width="220" x="360" y="356" as="geometry" />
+        </mxCell>
+        <mxCell id="pl_d2" parent="1" style="text;html=1;strokeColor=#82b366;fillColor=#ffffff;align=left;spacingLeft=6;fontSize=10;" value="2 | Городская больница №1 | Hospital | Critical" vertex="1">
+          <mxGeometry height="22" width="220" x="360" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="pl_d3" parent="1" style="text;html=1;strokeColor=#82b366;fillColor=#f8f9fa;align=left;spacingLeft=6;fontSize=10;" value="3 | Офис ТехноПарк | Office | Medium" vertex="1">
+          <mxGeometry height="22" width="220" x="360" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="pl_d4" parent="1" style="text;html=1;strokeColor=#82b366;fillColor=#ffffff;align=left;spacingLeft=6;fontSize=10;" value="8 | Аэропорт Домодедово | Transport | High" vertex="1">
+          <mxGeometry height="22" width="220" x="360" y="422" as="geometry" />
+        </mxCell>
+        <mxCell id="pl_d_etc" parent="1" style="text;html=1;strokeColor=#82b366;fillColor=#f8f9fa;align=left;spacingLeft=6;fontSize=10;fontStyle=2;fontColor=#888888;" value="... (всего 15 строк)" vertex="1">
+          <mxGeometry height="22" width="220" x="360" y="444" as="geometry" />
+        </mxCell>
+        <mxCell id="v_title" parent="1" style="text;html=1;strokeColor=none;fillColor=#ffe6cc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=13;fontStyle=1;arcSize=10;" value="Virus (Узел)" vertex="1">
+          <mxGeometry height="36" width="220" x="660" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v_row1" parent="1" style="text;html=1;strokeColor=#d6b656;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="VirusID : INT (PK, IDENTITY)" vertex="1">
+          <mxGeometry height="28" width="220" x="660" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="v_row2" parent="1" style="text;html=1;strokeColor=#d6b656;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="VirusName : NVARCHAR(100) NOT NULL" vertex="1">
+          <mxGeometry height="28" width="220" x="660" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="v_row3" parent="1" style="text;html=1;strokeColor=#d6b656;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="Strain : NVARCHAR(100)" vertex="1">
+          <mxGeometry height="28" width="220" x="660" y="152" as="geometry" />
+        </mxCell>
+        <mxCell id="v_row4" parent="1" style="text;html=1;strokeColor=#d6b656;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="OriginCountry : NVARCHAR(50)" vertex="1">
+          <mxGeometry height="28" width="220" x="660" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="v_row5" parent="1" style="text;html=1;strokeColor=#d6b656;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="R0 : FLOAT CHECK (R0 &gt; 0)" vertex="1">
+          <mxGeometry height="28" width="220" x="660" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="v_badge" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d79b00;strokeColor=#b46504;fontColor=#ffffff;fontSize=11;fontStyle=1;" value="AS NODE" vertex="1">
+          <mxGeometry height="28" width="220" x="660" y="244" as="geometry" />
+        </mxCell>
+        <mxCell id="v_data_lbl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;fontStyle=1;" value="Примеры данных (10 строк):" vertex="1">
+          <mxGeometry height="20" width="220" x="660" y="284" as="geometry" />
+        </mxCell>
+        <mxCell id="v_d1" parent="1" style="text;html=1;strokeColor=#d6b656;fillColor=#f8f9fa;align=left;spacingLeft=6;fontSize=10;" value="1 | SARS-CoV-2 | Альфа | Великобритания | 3.5" vertex="1">
+          <mxGeometry height="22" width="220" x="660" y="304" as="geometry" />
+        </mxCell>
+        <mxCell id="v_d2" parent="1" style="text;html=1;strokeColor=#d6b656;fillColor=#ffffff;align=left;spacingLeft=6;fontSize=10;" value="2 | SARS-CoV-2 | Дельта | Индия | 5.8" vertex="1">
+          <mxGeometry height="22" width="220" x="660" y="326" as="geometry" />
+        </mxCell>
+        <mxCell id="v_d3" parent="1" style="text;html=1;strokeColor=#d6b656;fillColor=#f8f9fa;align=left;spacingLeft=6;fontSize=10;" value="3 | SARS-CoV-2 | Омикрон | Юж. Африка | 7.2" vertex="1">
+          <mxGeometry height="22" width="220" x="660" y="348" as="geometry" />
+        </mxCell>
+        <mxCell id="v_d4" parent="1" style="text;html=1;strokeColor=#d6b656;fillColor=#ffffff;align=left;spacingLeft=6;fontSize=10;" value="6 | Грипп А | H1N1 | Мексика | 1.8" vertex="1">
+          <mxGeometry height="22" width="220" x="660" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="v_d5" parent="1" style="text;html=1;strokeColor=#d6b656;fillColor=#f8f9fa;align=left;spacingLeft=6;fontSize=10;" value="10 | Вирус гепатита А | IA | Египет | 1.1" vertex="1">
+          <mxGeometry height="22" width="220" x="660" y="392" as="geometry" />
+        </mxCell>
+        <mxCell id="v_d_etc" parent="1" style="text;html=1;strokeColor=#d6b656;fillColor=#ffffff;align=left;spacingLeft=6;fontSize=10;fontStyle=2;fontColor=#888888;" value="... (всего 10 строк)" vertex="1">
+          <mxGeometry height="22" width="220" x="660" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="s_title" parent="1" style="text;html=1;strokeColor=none;fillColor=#f8cecc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=13;fontStyle=1;arcSize=10;" value="Symptom (Узел)" vertex="1">
+          <mxGeometry height="36" width="220" x="960" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s_row1" parent="1" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="SymptomID : INT (PK, IDENTITY)" vertex="1">
+          <mxGeometry height="28" width="220" x="960" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="s_row2" parent="1" style="text;html=1;strokeColor=#b85450;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="SymptomName : NVARCHAR(100) NOT NULL" vertex="1">
+          <mxGeometry height="28" width="220" x="960" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="s_row3" parent="1" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="Severity : NVARCHAR(20)" vertex="1">
+          <mxGeometry height="28" width="220" x="960" y="152" as="geometry" />
+        </mxCell>
+        <mxCell id="s_row4" parent="1" style="text;html=1;strokeColor=#b85450;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;fontSize=10;fontColor=#666666;fontStyle=2;" value="  CHECK: Mild/Moderate/Severe/Critical" vertex="1">
+          <mxGeometry height="22" width="220" x="960" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="s_row5" parent="1" style="text;html=1;strokeColor=#b85450;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="Category : NVARCHAR(50)" vertex="1">
+          <mxGeometry height="28" width="220" x="960" y="202" as="geometry" />
+        </mxCell>
+        <mxCell id="s_badge" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ae4132;strokeColor=#6d2b23;fontColor=#ffffff;fontSize=11;fontStyle=1;" value="AS NODE" vertex="1">
+          <mxGeometry height="28" width="220" x="960" y="238" as="geometry" />
+        </mxCell>
+        <mxCell id="s_data_lbl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;fontStyle=1;" value="Примеры данных (12 строк):" vertex="1">
+          <mxGeometry height="20" width="220" x="960" y="278" as="geometry" />
+        </mxCell>
+        <mxCell id="s_d1" parent="1" style="text;html=1;strokeColor=#b85450;fillColor=#f8f9fa;align=left;spacingLeft=6;fontSize=10;" value="1 | Кашель | Moderate | Respiratory" vertex="1">
+          <mxGeometry height="22" width="220" x="960" y="298" as="geometry" />
+        </mxCell>
+        <mxCell id="s_d2" parent="1" style="text;html=1;strokeColor=#b85450;fillColor=#ffffff;align=left;spacingLeft=6;fontSize=10;" value="2 | Температура 38+ | Moderate | General" vertex="1">
+          <mxGeometry height="22" width="220" x="960" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="s_d3" parent="1" style="text;html=1;strokeColor=#b85450;fillColor=#f8f9fa;align=left;spacingLeft=6;fontSize=10;" value="4 | Одышка | Severe | Respiratory" vertex="1">
+          <mxGeometry height="22" width="220" x="960" y="342" as="geometry" />
+        </mxCell>
+        <mxCell id="s_d4" parent="1" style="text;html=1;strokeColor=#b85450;fillColor=#ffffff;align=left;spacingLeft=6;fontSize=10;" value="8 | Пневмония | Critical | Respiratory" vertex="1">
+          <mxGeometry height="22" width="220" x="960" y="364" as="geometry" />
+        </mxCell>
+        <mxCell id="s_d5" parent="1" style="text;html=1;strokeColor=#b85450;fillColor=#f8f9fa;align=left;spacingLeft=6;fontSize=10;" value="12 | Спутанность сознания | Severe | Neurological" vertex="1">
+          <mxGeometry height="22" width="220" x="960" y="386" as="geometry" />
+        </mxCell>
+        <mxCell id="s_d_etc" parent="1" style="text;html=1;strokeColor=#b85450;fillColor=#ffffff;align=left;spacingLeft=6;fontSize=10;fontStyle=2;fontColor=#888888;" value="... (всего 12 строк)" vertex="1">
+          <mxGeometry height="22" width="220" x="960" y="408" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="" vertex="1">
+          <mxGeometry height="90" width="700" x="60" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=12;fontStyle=1;" value="Легенда:" vertex="1">
+          <mxGeometry height="20" width="120" x="76" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_pk" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="76" y="526" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_pk_t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;" value=" — цветной фон строки" vertex="1">
+          <mxGeometry height="18" width="160" x="96" y="524" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_wh" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="280" y="526" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_wh_t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;" value=" — белый фон (чередование)" vertex="1">
+          <mxGeometry height="18" width="200" x="300" y="524" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_nd" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;fontSize=10;fontStyle=1;" value="AS NODE" vertex="1">
+          <mxGeometry height="18" width="70" x="76" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_nd_t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;" value=" — маркер графового узла (AS NODE) SQL Server Graph" vertex="1">
+          <mxGeometry height="18" width="360" x="152" y="548" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page2" name="Таблицы рёбер (Edges)">
+    <mxGraphModel dx="2154" dy="1164" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pg2_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=16;fontStyle=1;" value="Диаграмма 2: Таблицы рёбер (EDGE tables) + схема графа + примеры связей" vertex="1">
+          <mxGeometry height="30" width="1440" x="60" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="sec1_lbl" parent="1" style="text;html=1;strokeColor=none;fillColor=#e6f0ff;align=left;fontSize=13;fontStyle=1;spacingLeft=8;rounded=1;" value="РАЗДЕЛ 1: Структура таблиц рёбер (EDGE)" vertex="1">
+          <mxGeometry height="26" width="400" x="60" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cw_title" parent="1" style="text;html=1;strokeColor=none;fillColor=#0050ef;fontColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;arcSize=10;" value="ContactedWith (Ребро)" vertex="1">
+          <mxGeometry height="32" width="240" x="60" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="cw_r1" parent="1" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;spacingLeft=8;fontSize=11;" value="EdgeID : INT (PK, IDENTITY)" vertex="1">
+          <mxGeometry height="26" width="240" x="60" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="cw_r2" parent="1" style="text;html=1;strokeColor=#6c8ebf;fillColor=#ffffff;align=left;spacingLeft=8;fontSize=11;" value="ContactDate : DATE NOT NULL" vertex="1">
+          <mxGeometry height="26" width="240" x="60" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="cw_r3" parent="1" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;spacingLeft=8;fontSize=11;" value="ContactDuration : INT (минуты)" vertex="1">
+          <mxGeometry height="26" width="240" x="60" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="cw_r4" parent="1" style="text;html=1;strokeColor=#6c8ebf;fillColor=#ffffff;align=left;spacingLeft=8;fontSize=11;" value="ContactType : Direct/Indirect/Aerosol" vertex="1">
+          <mxGeometry height="26" width="240" x="60" y="194" as="geometry" />
+        </mxCell>
+        <mxCell id="cw_r5" parent="1" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;spacingLeft=8;fontSize=11;" value="Weight : DECIMAL(3,2) DEFAULT 1.0" vertex="1">
+          <mxGeometry height="26" width="240" x="60" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="cw_con" parent="1" style="text;html=1;strokeColor=#0050ef;fillColor=#e6f0ff;align=left;spacingLeft=8;fontSize=11;fontStyle=1;" value="CONNECTION: Person → Person" vertex="1">
+          <mxGeometry height="26" width="240" x="60" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="cw_note" parent="1" style="text;html=1;strokeColor=none;fillColor=#fffde7;align=left;spacingLeft=8;fontSize=10;fontStyle=2;fontColor=#666600;" value="Данные: 20 пар + реверс = 40 рёбер" vertex="1">
+          <mxGeometry height="20" width="240" x="60" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="vp_title" parent="1" style="text;html=1;strokeColor=none;fillColor=#00897B;fontColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;arcSize=10;" value="VisitedPlace (Ребро)" vertex="1">
+          <mxGeometry height="32" width="240" x="330" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="vp_r1" parent="1" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=left;spacingLeft=8;fontSize=11;" value="EdgeID : INT (PK, IDENTITY)" vertex="1">
+          <mxGeometry height="26" width="240" x="330" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="vp_r2" parent="1" style="text;html=1;strokeColor=#82b366;fillColor=#ffffff;align=left;spacingLeft=8;fontSize=11;" value="VisitDate : DATE NOT NULL" vertex="1">
+          <mxGeometry height="26" width="240" x="330" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="vp_r3" parent="1" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=left;spacingLeft=8;fontSize=11;" value="DurationMinutes : INT" vertex="1">
+          <mxGeometry height="26" width="240" x="330" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="vp_r4" parent="1" style="text;html=1;strokeColor=#82b366;fillColor=#ffffff;align=left;spacingLeft=8;fontSize=11;" value="WoreMask : BIT DEFAULT 0" vertex="1">
+          <mxGeometry height="26" width="240" x="330" y="194" as="geometry" />
+        </mxCell>
+        <mxCell id="vp_r5" parent="1" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=left;spacingLeft=8;fontSize=11;" value="Notes : NVARCHAR(200)" vertex="1">
+          <mxGeometry height="26" width="240" x="330" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="vp_con" parent="1" style="text;html=1;strokeColor=#00897B;fillColor=#e6f7f4;align=left;spacingLeft=8;fontSize=11;fontStyle=1;" value="CONNECTION: Person → Place" vertex="1">
+          <mxGeometry height="26" width="240" x="330" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="vp_note" parent="1" style="text;html=1;strokeColor=none;fillColor=#fffde7;align=left;spacingLeft=8;fontSize=10;fontStyle=2;fontColor=#666600;" value="Данные: 15 рёбер (01.12 — 15.12.2024)" vertex="1">
+          <mxGeometry height="20" width="240" x="330" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="iw_title" parent="1" style="text;html=1;strokeColor=none;fillColor=#d79b00;fontColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;arcSize=10;" value="InfectedWith (Ребро)" vertex="1">
+          <mxGeometry height="32" width="240" x="600" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="iw_r1" parent="1" style="text;html=1;strokeColor=#d6b656;fillColor=#ffe6cc;align=left;spacingLeft=8;fontSize=11;" value="EdgeID : INT (PK, IDENTITY)" vertex="1">
+          <mxGeometry height="26" width="240" x="600" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="iw_r2" parent="1" style="text;html=1;strokeColor=#d6b656;fillColor=#ffffff;align=left;spacingLeft=8;fontSize=11;" value="DiagnosisDate : DATE NOT NULL" vertex="1">
+          <mxGeometry height="26" width="240" x="600" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="iw_r3" parent="1" style="text;html=1;strokeColor=#d6b656;fillColor=#ffe6cc;align=left;spacingLeft=8;fontSize=11;" value="SymptomsOnsetDate : DATE" vertex="1">
+          <mxGeometry height="26" width="240" x="600" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="iw_r4" parent="1" style="text;html=1;strokeColor=#d6b656;fillColor=#ffffff;align=left;spacingLeft=8;fontSize=11;" value="Severity : Asympt/Mild/Moderate/Severe/Critical" vertex="1">
+          <mxGeometry height="26" width="240" x="600" y="194" as="geometry" />
+        </mxCell>
+        <mxCell id="iw_r5" parent="1" style="text;html=1;strokeColor=#d6b656;fillColor=#ffe6cc;align=left;spacingLeft=8;fontSize=11;" value="Outcome : Active/Recovered/Deceased" vertex="1">
+          <mxGeometry height="26" width="240" x="600" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="iw_con" parent="1" style="text;html=1;strokeColor=#d79b00;fillColor=#fff7e0;align=left;spacingLeft=8;fontSize=11;fontStyle=1;" value="CONNECTION: Person → Virus" vertex="1">
+          <mxGeometry height="26" width="240" x="600" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="iw_note" parent="1" style="text;html=1;strokeColor=none;fillColor=#fffde7;align=left;spacingLeft=8;fontSize=10;fontStyle=2;fontColor=#666600;" value="Данные: 13 рёбер (03.12 — 15.12.2024)" vertex="1">
+          <mxGeometry height="20" width="240" x="600" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="ss_title" parent="1" style="text;html=1;strokeColor=none;fillColor=#ae4132;fontColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;arcSize=10;" value="ShowsSymptom (Ребро)" vertex="1">
+          <mxGeometry height="32" width="240" x="870" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="ss_r1" parent="1" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=left;spacingLeft=8;fontSize=11;" value="EdgeID : INT (PK, IDENTITY)" vertex="1">
+          <mxGeometry height="26" width="240" x="870" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="ss_r2" parent="1" style="text;html=1;strokeColor=#b85450;fillColor=#ffffff;align=left;spacingLeft=8;fontSize=11;" value="FirstReportedDate : DATE NOT NULL" vertex="1">
+          <mxGeometry height="26" width="240" x="870" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="ss_r3" parent="1" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=left;spacingLeft=8;fontSize=11;" value="DurationDays : INT" vertex="1">
+          <mxGeometry height="26" width="240" x="870" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="ss_r4" parent="1" style="text;html=1;strokeColor=#b85450;fillColor=#ffffff;align=left;spacingLeft=8;fontSize=11;" value="Intensity : Mild/Moderate/Severe" vertex="1">
+          <mxGeometry height="26" width="240" x="870" y="194" as="geometry" />
+        </mxCell>
+        <mxCell id="ss_con" parent="1" style="text;html=1;strokeColor=#ae4132;fillColor=#fce8e6;align=left;spacingLeft=8;fontSize=11;fontStyle=1;" value="CONNECTION: Person → Symptom" vertex="1">
+          <mxGeometry height="26" width="240" x="870" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="ss_note" parent="1" style="text;html=1;strokeColor=none;fillColor=#fffde7;align=left;spacingLeft=8;fontSize=10;fontStyle=2;fontColor=#666600;" value="Данные: 10 рёбер (02.12 — 12.12.2024)" vertex="1">
+          <mxGeometry height="20" width="240" x="870" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="pc_title" parent="1" style="text;html=1;strokeColor=none;fillColor=#6a1221;fontColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;arcSize=10;" value="PlaceContaminatedWith (Ребро)" vertex="1">
+          <mxGeometry height="32" width="260" x="1140" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="pc_r1" parent="1" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=left;spacingLeft=8;fontSize=11;" value="EdgeID : INT (PK, IDENTITY)" vertex="1">
+          <mxGeometry height="26" width="260" x="1140" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="pc_r2" parent="1" style="text;html=1;strokeColor=#b85450;fillColor=#ffffff;align=left;spacingLeft=8;fontSize=11;" value="DetectionDate : DATE NOT NULL" vertex="1">
+          <mxGeometry height="26" width="260" x="1140" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="pc_r3" parent="1" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=left;spacingLeft=8;fontSize=11;" value="ContaminationLevel : Low/Medium/High/Critical" vertex="1">
+          <mxGeometry height="26" width="260" x="1140" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="pc_r4" parent="1" style="text;html=1;strokeColor=#b85450;fillColor=#ffffff;align=left;spacingLeft=8;fontSize=11;" value="SurfaceType : NVARCHAR(50)" vertex="1">
+          <mxGeometry height="26" width="260" x="1140" y="194" as="geometry" />
+        </mxCell>
+        <mxCell id="pc_con" parent="1" style="text;html=1;strokeColor=#6a1221;fillColor=#fce8e6;align=left;spacingLeft=8;fontSize=11;fontStyle=1;" value="CONNECTION: Place → Virus" vertex="1">
+          <mxGeometry height="26" width="260" x="1140" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="pc_note" parent="1" style="text;html=1;strokeColor=none;fillColor=#fffde7;align=left;spacingLeft=8;fontSize=10;fontStyle=2;fontColor=#666600;" value="Данные: 8 рёбер (05.12 — 12.12.2024)" vertex="1">
+          <mxGeometry height="20" width="260" x="1140" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="" vertex="1">
+          <mxGeometry height="100" width="1100" x="60" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_hdr" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=13;fontStyle=1;" value="Легенда рёбер (направленный граф SQL Server):" vertex="1">
+          <mxGeometry height="22" width="500" x="80" y="328" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_l1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;fontColor=#0050ef;" value="ContactedWith — двунаправленная связь Person ↔ Person (данные INSERT-ированы в обе стороны)" vertex="1">
+          <mxGeometry height="18" width="680" x="80" y="354" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_l2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;fontColor=#00897B;" value="VisitedPlace — однонаправленная: Person → Place" vertex="1">
+          <mxGeometry height="18" width="400" x="80" y="374" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_l3" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;fontColor=#d79b00;" value="InfectedWith — однонаправленная: Person → Virus" vertex="1">
+          <mxGeometry height="18" width="400" x="80" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_l4" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;fontColor=#ae4132;" value="ShowsSymptom — однонаправленная: Person → Symptom" vertex="1">
+          <mxGeometry height="18" width="400" x="500" y="374" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_l5" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;fontColor=#6a1221;" value="PlaceContaminatedWith — однонаправленная: Place → Virus" vertex="1">
+          <mxGeometry height="18" width="440" x="500" y="394" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="4q9l66wyJy7GWNb33Fep" name="Схема графа (узлы и рёбра)">
+    <mxGraphModel dx="2407" dy="1301" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Fk9OFhXkz3oIjWgN-rSi-1" parent="1" style="text;html=1;strokeColor=none;fillColor=#e6f0ff;align=left;fontSize=13;fontStyle=1;spacingLeft=8;rounded=1;" value="РАЗДЕЛ 2: Схема графа (узлы и рёбра)" vertex="1">
+          <mxGeometry height="26" width="400" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Fk9OFhXkz3oIjWgN-rSi-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1;" value="Place" vertex="1">
+          <mxGeometry height="65" width="150" x="385" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="Fk9OFhXkz3oIjWgN-rSi-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;fontSize=14;fontStyle=1;" value="Virus" vertex="1">
+          <mxGeometry height="65" width="150" x="40" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="Fk9OFhXkz3oIjWgN-rSi-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;fontStyle=1;" value="Symptom" vertex="1">
+          <mxGeometry height="65" width="150" x="630" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Fk9OFhXkz3oIjWgN-rSi-6" edge="1" parent="1" source="Fk9OFhXkz3oIjWgN-rSi-2" style="edgeStyle=elbowEdgeStyle;html=1;strokeColor=#0050ef;strokeWidth=2.5;curved=1;fontColor=#0050ef;fontSize=11;fontStyle=1;" target="Fk9OFhXkz3oIjWgN-rSi-2" value="ContactedWith">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="149.17" />
+            </Array>
+            <mxPoint x="404.9990795347703" y="120.00317992246157" as="sourcePoint" />
+            <mxPoint x="360" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fk9OFhXkz3oIjWgN-rSi-7" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#00897B;strokeWidth=2.5;fontColor=#00897B;fontSize=11;fontStyle=1;" target="Fk9OFhXkz3oIjWgN-rSi-3" value="VisitedPlace">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="170" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fk9OFhXkz3oIjWgN-rSi-8" edge="1" parent="1" source="Fk9OFhXkz3oIjWgN-rSi-2" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#d79b00;strokeWidth=2.5;fontColor=#d79b00;fontSize=11;fontStyle=1;" target="Fk9OFhXkz3oIjWgN-rSi-4" value="InfectedWith">
+          <mxGeometry relative="1" x="0.3835" y="-8" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="115" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fk9OFhXkz3oIjWgN-rSi-9" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#ae4132;strokeWidth=2.5;fontColor=#ae4132;fontSize=11;fontStyle=1;" target="Fk9OFhXkz3oIjWgN-rSi-5" value="ShowsSymptom">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="122.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fk9OFhXkz3oIjWgN-rSi-10" edge="1" parent="1" source="Fk9OFhXkz3oIjWgN-rSi-3" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#6a1221;strokeWidth=2.5;fontColor=#6a1221;fontSize=11;fontStyle=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="Fk9OFhXkz3oIjWgN-rSi-4" value="PlaceContaminatedWith">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fk9OFhXkz3oIjWgN-rSi-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;" value="Person" vertex="1">
+          <mxGeometry height="65" width="150" x="380" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="AqS5jkBVbOAhoMk-3hHS-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="" vertex="1">
+          <mxGeometry height="100" width="1100" x="40" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="AqS5jkBVbOAhoMk-3hHS-2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=13;fontStyle=1;" value="Легенда рёбер (направленный граф SQL Server):" vertex="1">
+          <mxGeometry height="22" width="500" x="60" y="448" as="geometry" />
+        </mxCell>
+        <mxCell id="AqS5jkBVbOAhoMk-3hHS-3" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;fontColor=#0050ef;" value="ContactedWith — двунаправленная связь Person ↔ Person (данные INSERT-ированы в обе стороны)" vertex="1">
+          <mxGeometry height="18" width="680" x="60" y="474" as="geometry" />
+        </mxCell>
+        <mxCell id="AqS5jkBVbOAhoMk-3hHS-4" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;fontColor=#00897B;" value="VisitedPlace — однонаправленная: Person → Place" vertex="1">
+          <mxGeometry height="18" width="400" x="60" y="494" as="geometry" />
+        </mxCell>
+        <mxCell id="AqS5jkBVbOAhoMk-3hHS-5" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;fontColor=#d79b00;" value="InfectedWith — однонаправленная: Person → Virus" vertex="1">
+          <mxGeometry height="18" width="400" x="60" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="AqS5jkBVbOAhoMk-3hHS-6" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;fontColor=#ae4132;" value="ShowsSymptom — однонаправленная: Person → Symptom" vertex="1">
+          <mxGeometry height="18" width="400" x="480" y="494" as="geometry" />
+        </mxCell>
+        <mxCell id="AqS5jkBVbOAhoMk-3hHS-7" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;fontColor=#6a1221;" value="PlaceContaminatedWith — однонаправленная: Place → Virus" vertex="1">
+          <mxGeometry height="18" width="440" x="480" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="3SWRhzixcZL1fMm3JM8l-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=16;fontStyle=1;" value="Диаграмма 3: схема графа" vertex="1">
+          <mxGeometry height="30" width="1440" x="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="7Wx56f6Q68tl9U7v2r3w" name="Примеры конкретных связей из данных">
+    <mxGraphModel dx="2046" dy="1106" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VFHQMkNNRdJbK3j8hFCv-1" parent="1" style="text;html=1;strokeColor=none;fillColor=#e6f0ff;align=left;fontSize=13;fontStyle=1;spacingLeft=8;rounded=1;" value="РАЗДЕЛ 3: Примеры конкретных связей из данных" vertex="1">
+          <mxGeometry height="26" width="440" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VFHQMkNNRdJbK3j8hFCv-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" value="Иванов Иван&#xa;(ID=1, Москва, Positive)" vertex="1">
+          <mxGeometry height="60" width="160" x="60" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="VFHQMkNNRdJbK3j8hFCv-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" value="Петров Петр&#xa;(ID=2, Москва, Positive)" vertex="1">
+          <mxGeometry height="60" width="160" x="100" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="VFHQMkNNRdJbK3j8hFCv-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" value="Морозов Игорь&#xa;(ID=8, Новосибирск, Positive)" vertex="1">
+          <mxGeometry height="60" width="160" x="420" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="VFHQMkNNRdJbK3j8hFCv-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="Ресторан ВкусВилл&#xa;(ID=1, High Risk)" vertex="1">
+          <mxGeometry height="60" width="170" x="380" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="VFHQMkNNRdJbK3j8hFCv-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;fontSize=11;" value="SARS-CoV-2 Альфа&#xa;(ID=1, R0=3.5)" vertex="1">
+          <mxGeometry height="60" width="160" x="840" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="VFHQMkNNRdJbK3j8hFCv-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" value="Кашель&#xa;(ID=1, Moderate)" vertex="1">
+          <mxGeometry height="60" width="140" x="1020" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="VFHQMkNNRdJbK3j8hFCv-8" edge="1" parent="1" source="VFHQMkNNRdJbK3j8hFCv-2" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#0050ef;strokeWidth=1.5;fontSize=10;fontColor=#0050ef;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="VFHQMkNNRdJbK3j8hFCv-3" value="ContactedWith&#xa;01.12.2024, 120 мин&#xa;Direct, Weight=0.9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="230" />
+              <mxPoint x="180" y="230" />
+            </Array>
+            <mxPoint x="180" y="150" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VFHQMkNNRdJbK3j8hFCv-9" edge="1" parent="1" source="VFHQMkNNRdJbK3j8hFCv-2" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#00897B;strokeWidth=1.5;fontSize=10;fontColor=#00897B;" target="VFHQMkNNRdJbK3j8hFCv-5" value="VisitedPlace&#xa;01.12.2024, 90 мин&#xa;WoreMask=false">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="400" />
+            </Array>
+            <mxPoint x="20" y="400" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VFHQMkNNRdJbK3j8hFCv-10" edge="1" parent="1" source="VFHQMkNNRdJbK3j8hFCv-2" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#d79b00;strokeWidth=1.5;fontSize=10;fontColor=#d79b00;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="VFHQMkNNRdJbK3j8hFCv-6" value="InfectedWith&#xa;03.12.2024&#xa;Moderate, Active">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="180" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VFHQMkNNRdJbK3j8hFCv-11" edge="1" parent="1" source="VFHQMkNNRdJbK3j8hFCv-2" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#ae4132;strokeWidth=1.5;fontSize=10;fontColor=#ae4132;" target="VFHQMkNNRdJbK3j8hFCv-7" value="ShowsSymptom&#xa;02.12.2024, 7 дней&#xa;Intensity=Moderate">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VFHQMkNNRdJbK3j8hFCv-12" edge="1" parent="1" source="VFHQMkNNRdJbK3j8hFCv-5" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#6a1221;strokeWidth=1.5;fontSize=10;fontColor=#6a1221;" target="VFHQMkNNRdJbK3j8hFCv-6" value="PlaceContaminated&lt;br&gt;05.12.2024, High">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VFHQMkNNRdJbK3j8hFCv-13" edge="1" parent="1" source="VFHQMkNNRdJbK3j8hFCv-4" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#0050ef;strokeWidth=1.5;fontSize=10;fontColor=#0050ef;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="VFHQMkNNRdJbK3j8hFCv-3" value="ContactedWith&#xa;08.12.2024, 40 мин&#xa;Direct, Weight=0.6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ifDiAwvWjEwtuJoBgHsT-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=16;fontStyle=1;" value="Диаграмма 4: примеры связей" vertex="1">
+          <mxGeometry height="30" width="1440" x="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
